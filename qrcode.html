@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+
+<h2>Scan to View the QR Code System Note</h2>
+<div id="qrcode"></div>
+
+<script>
+new QRCode(document.getElementById("qrcode"), {
+    text: "note.html",
+    width: 200,
+    height: 200
+});
+</script>
+
+</body>
+</html>
